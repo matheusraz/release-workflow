@@ -1,7 +1,7 @@
 name: Teste Pre-Release
 
 on:
-  push:
+  release:
     types:
     - prereleased
 

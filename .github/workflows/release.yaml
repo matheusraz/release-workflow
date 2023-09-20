@@ -1,7 +1,7 @@
 name: Teste Release
 
 on:
-  push:
+  release:
     types:
     - released
 
