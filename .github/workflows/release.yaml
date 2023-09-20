@@ -1,0 +1,13 @@
+name: Teste Release
+
+on:
+  push:
+    types:
+    - released
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Teste
+      run: echo "THIS IS A RELEASE"
