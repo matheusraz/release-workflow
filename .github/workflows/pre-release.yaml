@@ -1,4 +1,4 @@
-name: Teste Pre-Release
+name: Test Pre-Release
 
 on:
   release:
@@ -9,5 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: Teste
+    - name: Test
       run: echo "THIS IS A PRE-RELEASE"
+    - name: Tag
+      run: echo ${{ github.ref_name }}
